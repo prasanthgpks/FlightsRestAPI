@@ -1,0 +1,82 @@
+{
+	"info": {
+		"_postman_id": "8211feb1-dc6f-417c-8a7c-63ec038c1d1d",
+		"name": "FlightRestApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetAllFlights",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:65334/api/flights",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "65334",
+					"path": [
+						"api",
+						"flights"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllBookings",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:65334/api/flights/Bookings",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "65334",
+					"path": [
+						"api",
+						"flights",
+						"Bookings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllAvailableFlights",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"startDate\" : \"2018-08-19\",\n\t\"endDate\" : \"2018-08-20\",\n\t\"numberOfPax\" : 3\n}"
+				},
+				"url": {
+					"raw": "http://localhost:65334/api/flights/GetAvailableFlights",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "65334",
+					"path": [
+						"api",
+						"flights",
+						"GetAvailableFlights"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
