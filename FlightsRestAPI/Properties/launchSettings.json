@@ -19,7 +19,7 @@
     "FlightsRestAPI": {
       "commandName": "Project",
       "launchBrowser": true,
-      "launchUrl": "api/flights,
+      "launchUrl": "api/flights",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },

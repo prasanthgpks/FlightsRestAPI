@@ -24,9 +24,9 @@ namespace FlightsRestAPI.Models
             return new List<Booking>
             {
 
-                new Booking { BookingDate = DateTime.Now, FlightId = 1 , NumberOfPassengers = 2 },
-                new Booking { BookingDate = DateTime.Now, FlightId = 2 , NumberOfPassengers = 3 },
-                new Booking { BookingDate = DateTime.Now.Date.AddDays(1), FlightId = 3 , NumberOfPassengers = 2 }
+                new Booking { Id= 1, BookingDate = DateTime.Now, FlightId = 1 , NumberOfPassengers = 2 },
+                new Booking { Id= 2, BookingDate = DateTime.Now, FlightId = 2 , NumberOfPassengers = 3 },
+                new Booking { Id= 3, BookingDate = DateTime.Now.Date.AddDays(1), FlightId = 3 , NumberOfPassengers = 2 }
 
             };
         }
